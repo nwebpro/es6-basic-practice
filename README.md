@@ -147,9 +147,38 @@ const employee = { ...obj1, ...obj2 }
 console.log(employee);
 ```
 
+## 6. What do you understand about default parameters?
+ডিফল্ট ফাংশন প্যারামিটার নামক প্যারামিটারগুলিকে ডিফল্ট মানগুলির সাথে আরম্ভ করার অনুমতি দেয় যদি কোনও মান বা অনির্ধারিত পাস না হয়। `Example`
+```sh
+const multiply(a, b = 1) => a * b;
 
+console.log(multiply(5, 2));
+// expected output: 10
 
+console.log(multiply(5));
+// expected output: 5
+```
 
+## 7. What are template literals in ES6?
+টেমপ্লেট লিটারেল হল একটি নতুন বৈশিষ্ট্য যা ECMAScript 2015/ ES6-এ চালু করা হয়েছে। এটি মাল্টিলাইন স্ট্রিং তৈরি এবং স্ট্রিং ইন্টারপোলেশন সঞ্চালনের একটি সহজ উপায় প্রদান করে। টেমপ্লেট লিটারাল হল স্ট্রিং লিটারাল এবং এমবেডেড এক্সপ্রেশনের অনুমতি দেয়।
 
+ES6 এর আগে, টেমপ্লেট লিটারেলকে টেমপ্লেট স্ট্রিং বলা হত। স্ট্রিং-এ উদ্ধৃতিগুলির বিপরীতে, টেমপ্লেট লিটারেলগুলি ব্যাকটিক `(``)` অক্ষর দ্বারা আবদ্ধ থাকে। টেমপ্লেট লিটারেলে প্লেসহোল্ডার থাকতে পারে, যা ডলার চিহ্ন এবং curly braces `($(expression})` দ্বারা নির্দেশিত হয়। ব্যাকটিক্সের ভিতরে, যদি আমরা একটি expression ব্যবহার করতে চাই, তাহলে আমরা সেই expression `($(expression})` এ রাখতে পারি।
+
+## 8. Tell us the difference between arrow and regular function?
+Array ফাংশন - একটি নতুন বৈশিষ্ট্য ES6-এ প্রবর্তিত হয়েছে - জাভাস্ক্রিপ্টে সংক্ষিপ্ত ফাংশন লিখতে সক্ষম করে৷ যদিও উভয় নিয়মিত এবং Array ফাংশন একইভাবে কাজ করে, তবুও তাদের মধ্যে কিছু আকর্ষণীয় পার্থক্য রয়েছে।
+
+### `Example of regular functions`
+```sh
+const square = function(x){
+    return (x*x);
+};
+console.log(square(9));
+```
+### `Example of arrow functions`
+```sh
+const square = (x) => x * x;
+console.log(square(9));
+```
+## [Read More](https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/)
 
 
