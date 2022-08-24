@@ -37,3 +37,20 @@ document.getElementsByTagName(Tag_name);
 document.querySelector(selectors);
 document.querySelectorAll(selectors);
 ```
+
+## 3. What’s the difference between an Event Handler and an Event Listener?
+ - ## Event Handlers
+    - একটি ইভেন্ট হ্যান্ডলার ব্যবহার করতে, একটি বস্তুর `EventHandler` বৈশিষ্ট্যগুলির একটি ব্যবহার করুন। এখানে `onclick` নামক একটি ব্যবহার করার একটি উদাহরণ রয়েছে।
+```sh
+const button = document.querySelector(".btn")
+
+button.onclick = () => {
+  console.log("Button clicked.");
+};
+```
+- একজন ব্যবহারকারী একটি বোতামে ক্লিক করলে `onclick` ইভেন্ট হ্যান্ডলারটি ট্রিগার হয়। ফলস্বরূপ, `Button clicked.` কনসোলে আউটপুট হয়।
+
+## [Read More](https://medium.com/geekculture/event-handlers-vs-event-listeners-in-javascript-b4086b8040b0)
+
+## 4. What does “event bubbling” mean in JavaScript?
+ইভেন্ট `bubbling` হল HTML DOM API-তে ইভেন্ট প্রচারের একটি পদ্ধতি যখন একটি ইভেন্ট অন্য একটি উপাদানের ভিতরে থাকে এবং উভয় উপাদানই সেই ইভেন্টে একটি হ্যান্ডেল নিবন্ধিত করে। এটি এমন একটি প্রক্রিয়া যা ইভেন্টটিকে ট্রিগার করে এমন উপাদান দিয়ে শুরু হয় এবং তারপর ক্রমানুসারে থাকা উপাদানগুলি পর্যন্ত `bubbles` করে।
