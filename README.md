@@ -54,3 +54,12 @@ button.onclick = () => {
 
 ## 4. What does “event bubbling” mean in JavaScript?
 ইভেন্ট `bubbling` হল HTML DOM API-তে ইভেন্ট প্রচারের একটি পদ্ধতি যখন একটি ইভেন্ট অন্য একটি উপাদানের ভিতরে থাকে এবং উভয় উপাদানই সেই ইভেন্টে একটি হ্যান্ডেল নিবন্ধিত করে। এটি এমন একটি প্রক্রিয়া যা ইভেন্টটিকে ট্রিগার করে এমন উপাদান দিয়ে শুরু হয় এবং তারপর ক্রমানুসারে থাকা উপাদানগুলি পর্যন্ত `bubbles` করে।
+
+## 5. Can you explain the different types of events available in JavaScript?
+জাভাস্ক্রিপ্টকে ইভেন্টের সাথে কাজ করতে দেওয়ার জন্য বিভিন্ন পদ্ধতি ব্যবহার করা যেতে পারে: HTML ইভেন্ট অ্যাট্রিবিউট সরাসরি জাভাস্ক্রিপ্ট কোড এক্সিকিউট করতে পারে। HTML ইভেন্ট অ্যাট্রিবিউট জাভাস্ক্রিপ্ট ফাংশন কল করতে পারে। আপনি HTML উপাদানগুলিতে আপনার নিজস্ব ইভেন্ট হ্যান্ডলার ফাংশন বরাদ্দ করতে পারেন।
+## [Read More](https://www.w3schools.com/js/js_events_examples.asp)
+
+## 6. What’s the difference between event.preventDefault() and event.stopPropagation()?
+`event.preventDefault()` ব্রাউজারগুলির ডিফল্ট আচরণকে বাধা দেয়, কিন্তু ইভেন্টটিকে DOM `bubbling` করা থেকে থামায় না। `event.stopPropagation()` ইভেন্টটিকে DOM `bubbling` করা থেকে বাধা দেয়, কিন্তু ব্রাউজারগুলির ডিফল্ট আচরণ বন্ধ করে না।
+
+
